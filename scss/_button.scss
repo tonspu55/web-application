@@ -1,0 +1,81 @@
+button {
+    outline: none;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Thai_bold';
+
+    &.btn-primary {
+        background-color: #eec329;
+        color: #111;
+        border: 1px solid #eec329;
+        height: 25px;
+        width:140px;
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+
+    &.btn-with-icon {
+        border: 1px solid #eec329;
+        color: #fff;
+        background-color: transparent;
+        width: 140px;
+        height: 25px;
+        padding: 0 10px 0 0;
+
+        img.icon-btn {
+            vertical-align: middle;
+            width: 18px;
+            height: 18px;
+            position: relative;
+            top: -2px;
+
+            &.-favorite-icon {
+                left: 0;
+            }
+
+            &.-cart-icon {
+                left: -14px;
+            }
+        }
+
+        span.text-icon {
+            float: right;
+        }
+    }
+
+    &.btn-with-icon-yellow {
+        border: 1px solid #eec329;
+        color: #111;
+        background-color: #eec329;
+        width: 140px;
+        height: 25px;
+        padding: 0 10px 0 0;
+
+        img.icon-btn {
+            vertical-align: middle;
+            width: 18px;
+            height: 18px;
+            position: relative;
+            top: -1px;
+
+            &.-report-icon {
+                left: -31px;
+            }
+        }
+
+        span.text-icon {
+            float: right;
+        }
+    }
+}

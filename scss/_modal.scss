@@ -1,0 +1,424 @@
+//-------------------modal-----------------//
+
+.ui {
+    &.modal {
+        .content {
+            &.-modal-data {
+                background: rgba(202, 207, 214, 0.8);
+            }
+
+            &.-modal-filter {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.modal-layout {
+    .slider-function {
+        position: relative;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 4px -3px 7px -5px #333;
+        -webkit-box-shadow: 4px -3px 7px -5px #333;
+        -moz-box-shadow: 4px -3px 7px -5px #333;
+        margin-top: 10px;
+        height: 289px;
+
+        .slider {
+            width: 100%;
+            margin: auto;
+            padding: 0;
+
+            .owl-item img.normal {
+                width: 100%;
+                height: 289px;
+            }
+        }
+
+        .slider-data {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: url("../image/data.png") no-repeat;
+            z-index: 500;
+            width: 85px;
+            height: 20px;
+        }
+    }
+
+    .maplocation-function {
+        width: 100%;
+        margin: auto;
+        height: 289px;
+        position: relative;
+        box-shadow: 4px -3px 7px -5px #333;
+        -webkit-box-shadow: 4px -3px 7px -5px #333;
+        -moz-box-shadow: 4px -3px 7px -5px #333;
+        margin-top: 10px;
+
+        .tools-container-inModal {
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+            display: block;
+            z-index: 10;
+            @include transition(all 0.2s ease-out);
+
+            &.translateY {
+                @include transform(translateY(-196px));
+            }
+
+            ul.tools {
+                position: relative;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style-type: none;
+
+                    ul.template-menu {
+                        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+                        background-color: rgba(255, 255, 255, 1);
+                        border-radius: 5px;
+                        position: absolute;
+                        top: -20px;
+                        right: 65px;
+                        @include transition(all .0.25s ease-out);
+                        visibility: hidden;
+                        opacity: 0;
+                        cursor: default;
+                        width: 200px;
+                        padding: 10px;
+                        text-align: center;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            right: -12px;
+                            top: 50%;
+                            @include transform(translateY(-50%));
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 7px 0 7px 12px;
+                            border-color: transparent transparent transparent #fff;
+                        }
+
+                        li.map-template {
+                            list-style-type: none;
+                            display: inline;
+                            margin-right: 15px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &.template-hover {
+                        &:hover {
+                            ul.template-menu {
+                                opacity: 1;
+                                visibility: visible;
+                                color: #2c3e50;
+                            }
+                        }
+                    }
+
+                    &.tools-icon {
+                        cursor: pointer;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .chart-function {
+        position: relative;
+        width: 100%;
+        background-color: #eec329;
+        box-shadow: 4px -3px 7px -5px #333;
+        -webkit-box-shadow: 4px -3px 7px -5px #333;
+        -moz-box-shadow: 4px -3px 7px -5px #333;
+        height: 289px;
+        padding: 15px;
+        margin-top: 10px;
+
+        .owner {
+            font-size: 10px;
+            font-family: 'Thai_med';
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+            padding: 5px 0 10px;
+
+            span.ownerinput {
+                width: 50px;
+                float: left;
+                position: relative;
+                top: 4px;
+            }
+
+            span.ownerfiled {
+                font-size: 14px;
+                font-family: 'Thai_bold';
+            }
+        }
+
+        .tel {
+            font-size: 10px;
+            font-family: 'Thai_med';
+            border-bottom: 1px solid #fff;
+            padding: 5px 0 10px 10px;
+
+            span.telnumber {
+                font-size: 14px;
+                font-family: 'Thai_bold';
+                margin-left: 10px;
+            }
+        }
+
+        .save {
+            font-size: 10px;
+            font-family: 'Thai_med';
+            border-bottom: 1px solid #fff;
+            height: 40px;
+            line-height: 40px;
+
+            span.saveinput {
+                float: left;
+                width: 50px;
+                position: relative;
+                top: 3px;
+            }
+
+            span.savenumber {
+                font-size: 20px;
+                font-family: 'Thai_bold';
+            }
+        }
+
+        .chart-container {
+            width: 100%;
+            margin-top: 15px;
+            height: 160px;
+            max-height: 160px;
+            
+
+            .chart-title {
+                font-size: 10px;
+                font-family: 'Thai_med';
+            }
+        }
+    }
+
+    .category-form {
+        box-shadow: 4px -3px 7px -5px #333;
+        -webkit-box-shadow: 4px -3px 7px -5px #333;
+        -moz-box-shadow: 4px -3px 7px -5px #333;
+        margin-top: -13px;
+
+        .category-title {
+            background: rgba(34,34,33,.2);
+            line-height: 40px;
+            height: 40px;
+            font-family: 'Thai_med';
+            padding-left: 15px;
+
+            span.category-filter {
+                font-size: 14px;
+                color: #fff;
+            }
+
+            span.category-output {
+                font-size: 20px;
+                color: #fff;
+                margin-left: 5px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                position: relative;
+                top: 1px;
+            }
+        }
+
+        .category-list {
+            background-color: rgba(0,0,0,0.6);
+            padding: 30px 15px;
+            font-family: 'Thai_med';
+            height: 264px;
+            max-height: 264px;
+            overflow-y: auto;
+
+            .category-list-filter {
+                float: left;
+                display: inline-block;
+                width: 50px;
+                margin-right: 50px;
+                color: #eec329;
+                font-size: 13px;
+                font-family: 'Thai_bold';
+                text-transform: uppercase;
+            }
+
+            .category-list-output {
+                overflow: hidden;
+                color: #dfdfdf;
+                font-size: 12px;
+                font-family: 'Thai_thin';
+            }
+        }
+    }
+
+    .tab-in-modal-form {
+        background-color: #fff;
+        box-shadow: 4px -3px 7px -5px #333;
+        -webkit-box-shadow: 4px -3px 7px -5px #333;
+        -moz-box-shadow: 4px -3px 7px -5px #333;
+        position: relative;
+        height: 291px;
+        border-top-right-radius: 25px;
+
+        .ui.menu {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            background-color: #ebebec;
+            border-top-right-radius: 25px;
+            height: 37px;
+        }
+
+        .ui.item.menu .item {
+            background-color: #ebebec;
+            border-radius: 0 30px 0 0;
+            box-shadow: 4px -3px 7px -5px #333;
+            -moz-box-shadow: 4px -3px 7px -5px #333;
+            -webkit-box-shadow: 4px -3px 7px -5px #333;
+            border-right: 1px solid #cdcbcb;
+        }
+
+        .filter-bottom {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 39px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+
+            .button-filter-form {
+                float: right;
+                line-height: 38px;
+                padding: 0 10px;
+            }
+        }
+
+        .ui.menu .active.item {
+            font-family: 'Thai_bold';
+            font-size: 14px;
+            background-color: #fff;
+        }
+
+        .ui.menu .item {
+            font-family: 'Thai_med';
+            font-size: 14px;
+            background: rgba(34,34,33,.2);
+        }
+
+        .sidetab-content {
+            padding: 1.3rem 1.3rem 3.8rem;
+
+            .cover {
+                position: relative;
+                border-top: 1px solid #c3c5c5;
+                width: 150px;
+                float: left;
+                display: inline-block;
+
+                .img-cover {
+                    height: 35px;
+                    float: right;
+                }
+
+                .text-cover {
+                    text-transform: uppercase;
+                    line-height: 0.9;
+                    margin-top: 10px;
+                    margin-left: 5px;
+
+                    h1 {
+                        font-size: 18px;
+                        font-family: 'Thai_bold';
+                        color: #000;
+
+                        &.-cover-b {
+                            opacity: 0.8;
+                        }
+
+                        &.-cover-c {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+
+                .border-cover {
+                    border: 1.5px solid #070909;
+                    width: 20%;
+                    margin-top: 10px;
+                    margin-left: 5px;
+                }
+            }
+
+            .table-inside-tab-container {
+                overflow: hidden;
+            }
+
+            .video-container {}
+
+            table.inside-tab {
+                font-size: 14px;
+
+                thead {
+                    display: table;
+                    width: calc( 100% - 0em );
+
+                    tr {
+                        display: table;
+                        width: 100%;
+                        table-layout: fixed;
+
+                        th {
+                            text-align: center;
+                            background: rgba(34,34,33,.2);
+                            border: none;
+                        }
+                    }
+                }
+
+                tbody {
+                    height: 135px;
+                    display: block;
+                    overflow: auto;
+
+                    tr {
+                        display: table;
+                        width: 100%;
+                        table-layout: fixed;
+
+                        td {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.video-js {
+    &.-video-container-in-modal {
+        width: 100% !important;
+        height: 169px !important;
+    }
+
+    .vjs-big-play-button {
+        @include transform(translate(-50% , -50%));
+    }
+}

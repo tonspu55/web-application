@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/main-page.css">
+    <link rel="stylesheet" type="text/css" href="../css/tab.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/label.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/checkbox.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/grid.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/modal.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/table.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/dimmer.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/transition.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/easyzoom.css">
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../node_modules/video.js/dist/video-js.min.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.2.0/sweetalert2.min.css">
+    <title>toffymap</title>
+</head>
+
+<body>
+    <!--page-loading-->
+    <div class="loading">
+        <div class="loader"></div>
+    </div>
+    <!--end-page-loading-->
+    <div class="wrapper">
+        <div class="border-bottom"></div>
+        <nav class="toffy-nav">
+            <div class="user-profile user-detail-hover">
+                <img src="../image/user-icon.png" width="30px" height="30px" class="user-icon"><span style="font-size:16px">Username</span>
+                <ul class="user-detail">
+                    <li class="user-detail-form">
+                        <div class="title-list">เปลี่ยนรหัสผ่าน
+                            <div class="border-line"></div>
+                            <div class="title-list-icon">
+                                <img src="../image/title-icon.png" alt="title-icon" width="40px" height="40px">
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="../image/logo.png" alt="brand" width="100px" height="33px">
+            </div>
+            <ul class="toffy-menu">
+                <li>
+                    <a href="main.html" class="toffy-link"><span class="icon-menu"><img src="../image/home.png" width="21px" height="21px"></span>map</a>
+                </li>
+                <li>
+                    <a href="favorite.html" class="toffy-link"><span class="icon-menu"><img src="../image/favorite-icon.png"></span>favorite</a>
+                </li>
+                <li>
+                    <a href="cart.html" class="toffy-link"><span class="icon-menu"><img src="../image/cart-icon.png"></span>cart</a>
+                </li>
+                <li>
+                    <a href="#" class="toffy-link"><span class="icon-menu"><img src="../image/report-icon.png"></span>report</a>
+                </li>
+            </ul>
+        </nav>
+        <!--aslide-menu-->
+        <div class="aslide-container">
+            <div class="aslide-bar">
+                <div class="tab-form slimScrollbar">
+                    <!--tab menu-->
+                    <div class="ui top attached tabular menu">
+                        <a class="active item -width50per" data-tab="tab-a">SELECT BY ATTRIBUTE</a>
+                        <a class="item -width50per" data-tab="tab-b">SELECT BY LOCATION</a>
+
+                    </div>
+                    <!--tab a -->
+                    <div class="ui bottom attached active tab segment" data-tab="tab-a">
+                        <div class="inTab-content">
+                            <div class="ui grid">
+                                <div class="sixteen wide column">
+                                    <div class="title-list" id="clickSpin-A">ที่ตั้งป้าย
+                                        <div class="border-line"></div>
+                                        <div class="title-list-icon" id="rotating-A">
+                                            <img src="../image/title-icon.png" alt="title-icon" width="40px" height="40px">
+                                        </div>
+                                    </div>
+                                    <div class="form-blog" id="toggle-form-A">
+                                        <select class="ui fluid dropdown">
+                                           <option value="">ทดสอบ</option>
+                                        </select>
+                                        <select class="ui fluid dropdown mgt-10">
+                                           <option value="">ทดสอบ</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui grid mgt-0">
+                                <div class="sixteen wide column">
+                                    <div class="title-list" id="clickSpin-B">ลักษณะป้าย
+                                        <div class="border-line"></div>
+                                        <div class="title-list-icon" id="rotating-B">
+                                            <img src="../image/title-icon.png" alt="title-icon" width="40px" height="40px">
+                                        </div>
+                                    </div>
+                                    <div class="form-blog" id="toggle-form-B">
+                                        <select class="ui fluid dropdown">
+                                           <option value="">ทดสอบ</option>
+                                        </select>
+                                        <select class="ui fluid dropdown mgt-10">
+                                           <option value="">ทดสอบ</option>
+                                      </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui grid mgt-0">
+                                <div class="sixteen wide column">
+                                    <div class="title-list" id="clickSpin-C">โฆษณาบนป้าย
+                                        <div class="border-line"></div>
+                                        <div class="title-list-icon" id="rotating-C">
+                                            <img src="../image/title-icon.png" alt="title-icon" width="40px" height="40px">
+                                        </div>
+                                    </div>
+                                    <div class="form-blog" id="toggle-form-C">
+                                        <div class="ui fluid filter">
+                                            <span class="filter-text">เลือกกลุ่มอุตสาหกรรม</span>
+                                            <i class="fa fa-filter filter-icon" id="open-filter-modal" aria-hidden="true"></i>
+                                        </div>
+                                        <select class="ui fluid dropdown  mgb-15">
+                                           <option value="">ทดสอบ</option>
+                                        </select>
+                                        <select class="ui fluid dropdown  mgb-15">
+                                           <option value="">ทดสอบ</option>
+                                        </select>
+                                        <h4 class="title-status">สถานะป้าย</h4>
+                                        <ul class="checkbox-list">
+                                            <li>
+                                                <div class="ui  checkbox">
+                                                    <input id="example" type="checkbox">
+                                                    <label for="example">ทดสอบนะคับ</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="ui  checkbox">
+                                                    <input id="example" type="checkbox">
+                                                    <label for="example">ทดสอบนะคับ</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="ui  checkbox">
+                                                    <input id="example" type="checkbox">
+                                                    <label for="example">ทดสอบนะคับ</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-fixed-bot">
+                                <button type="button" name="button" class="btn-primary click-show-table-list">search</button>
+                                <button type="button" name="button" class="btn-primary">delete search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tab b -->
+                    <div class="ui bottom attached tab segment" data-tab="tab-b">
+                        <div class="inTab-content">
+                            Tab-B
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--map-->
+        <div class="map-container">
+            <div id="mapInMain"></div>
+            <div class="panel-toggle">
+                <img src="../image/toggle-table-up.png" class="toggle-table-up" alt="" width="25px" height="25px" />
+            </div>
+            <div class="table-list-container">
+                <div class="table-list">
+                    <img src="../image/toggle-table-down.png" class="toggle-table-down" alt="" width="25px" height="25px" />
+                    <table class="ui fixed celled  table">
+                        <thead>
+                            <tr>
+                                <th>ประเภทป้าย</th>
+                                <th>สถานะ</th>
+                                <th>ราคา</th>
+                                <th>ถนน</th>
+                                <th>จังหวัด</th>
+                                <th>FAVORITE</th>
+                                <th>ดูข้อมูล</th>
+                            </tr>
+                        </thead>
+                        <tbody class="slimScrollbar">
+                            <tr>
+                                <td>บิลบอร์ด</td>
+                                <td>ไม่ว่าง</td>
+                                <td>400,000</td>
+                                <td>แจ้งวัฒนะ</td>
+                                <td>กรุงเทพมหานคร</td>
+                                <td><i class="fa fa-heart heart-icon" aria-hidden="true"></i></td>
+                                <td><i class="fa fa-search search-icon open-modal" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>บิลบอร์ด</td>
+                                <td>ไม่ว่าง</td>
+                                <td>400,000</td>
+                                <td>แจ้งวัฒนะ</td>
+                                <td>กรุงเทพมหานคร</td>
+                                <td><i class="fa fa-heart heart-icon -active" aria-hidden="true"></i></td>
+                                <td><i class="fa fa-search search-icon" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>บิลบอร์ด</td>
+                                <td>ไม่ว่าง</td>
+                                <td>400,000</td>
+                                <td>แจ้งวัฒนะ</td>
+                                <td>กรุงเทพมหานคร</td>
+                                <td><i class="fa fa-heart heart-icon -active" aria-hidden="true"></i></td>
+                                <td><i class="fa fa-search search-icon" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>บิลบอร์ด</td>
+                                <td>ไม่ว่าง</td>
+                                <td>400,000</td>
+                                <td>แจ้งวัฒนะ</td>
+                                <td>กรุงเทพมหานคร</td>
+                                <td><i class="fa fa-heart heart-icon" aria-hidden="true"></i></td>
+                                <td><i class="fa fa-search search-icon" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>บิลบอร์ด</td>
+                                <td>ไม่ว่าง</td>
+                                <td>400,000</td>
+                                <td>แจ้งวัฒนะ</td>
+                                <td>กรุงเทพมหานคร</td>
+                                <td><i class="fa fa-heart heart-icon" aria-hidden="true"></i></td>
+                                <td><i class="fa fa-search search-icon" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>บิลบอร์ด</td>
+                                <td>ไม่ว่าง</td>
+                                <td>400,000</td>
+                                <td>แจ้งวัฒนะ</td>
+                                <td>กรุงเทพมหานคร</td>
+                                <td><i class="fa fa-heart heart-icon" aria-hidden="true"></i></td>
+                                <td><i class="fa fa-search search-icon" aria-hidden="true"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tools-container">
+                <ul class="tools">
+                    <li class=" tools-icon template-hover">
+                        <img src="../image/map-template.png" alt="" width="48px" height="48px">
+                        <ul class="template-menu">
+                            <li class="mgb-10">
+                                รูปแบบแผนที่
+                            </li>
+                            <li class="map-template">
+                                <img src="../image/mapstyle-1.png" alt="style 1" width="43px" height="43px" onclick="mapStyle1()">
+                            </li>
+                            <li class="map-template">
+                                <img src="../image/mapstyle-2.png" alt="style 2" width="43px" height="43px" onclick="mapStyle2()">
+                            </li>
+                            <li class="map-template">
+                                <img src="../image/mapstyle-3.png" alt="style 3" width="43px" height="43px" onclick="mapStyle3()">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" tools-icon">
+                        <img src="../image/get-location.png" alt="" width="48px" height="48px">
+                    </li>
+                    <li class=" tools-icon">
+                        <img src="../image/zoom-in.png" alt="" width="48px" height="48px">
+                    </li>
+                    <li class=" tools-icon">
+                        <img src="../image/zoom-out.png" alt="" width="48px" height="48px">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--modal detail-->
+    <div class="ui fullscreen modal" id="detail-modal">
+        <div class="close-modal" id="close-detail-modal"></div>
+        <div class="content -modal-data">
+            <div class="ui grid stackable">
+                <div class="four wide column">
+                    <div class="modal-layout">
+                        <div class="slider-function">
+                            <div class="slider">
+                                <!--slide-1-->
+                                <div class="easyzoom easyzoom--overlay">
+                                    <a href="../image/banner//NBI444.jpg">
+                                        <img src="../image/banner//NBI444.jpg" alt="" class="normal" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight wide column pdlr-0">
+                    <div class="modal-layout">
+                        <div class="maplocation-function">
+                            <div id="mapInModal"></div>
+                            <div class="tools-container-inModal">
+                                <ul class="tools">
+                                    <li class=" tools-icon template-hover">
+                                        <img src="../image/map-template.png" alt="" width="43px" height="43px">
+                                        <ul class="template-menu">
+                                            <li class="mgb-10">
+                                                รูปแบบแผนที่
+                                            </li>
+                                            <li class="map-template">
+                                                <img src="../image/mapstyle-1.png" alt="style 1" width="43px" height="43px">
+                                            </li>
+                                            <li class="map-template">
+                                                <img src="../image/mapstyle-2.png" alt="style 2" width="43px" height="43px">
+                                            </li>
+                                            <li class="map-template">
+                                                <img src="../image/mapstyle-3.png" alt="style 3" width="43px" height="43px">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class=" tools-icon">
+                                        <img src="../image/get-location.png" alt="" width="43px" height="43px">
+                                    </li>
+                                    <li class=" tools-icon">
+                                        <img src="../image/zoom-in.png" alt="" width="43px" height="43px">
+                                    </li>
+                                    <li class=" tools-icon">
+                                        <img src="../image/zoom-out.png" alt="" width="43px" height="43px">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <div class="modal-layout">
+                        <div class="chart-function">
+                            <div class="ui grid mg-5">
+                                <div class="seven wide column no-padding">
+                                    <div class="owner">
+                                        <span class="ownerinput">OWNER</span>
+                                        <span class="ownerfiled">VGI</span>
+                                    </div>
+                                </div>
+                                <div class="nine wide column no-padding">
+                                    <div class="tel">TEL<span class="telnumber">095 249 2032</span></div>
+                                </div>
+                                <div class="sixteen wide column no-padding">
+                                    <div class="save">
+                                        <span class="saveinput">SAVE</span>
+                                        <span class="savenumber">122</span>
+                                    </div>
+                                </div>
+                                <div class="sixteen wide column no-padding">
+                                    <div class="chart-container slimScrollbar">
+                                        <!--<canvas id="myChart"></canvas>-->
+                                        <div class="chart-title">VIEW</div>
+                                        <img src="../image/chart.png" height="150px" width="300px" style="margin-top:10px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide column pdt-0 ">
+                    <div class="modal-layout">
+                        <div class="category-form">
+                            <div class="category-title">
+                                <span class="category-filter">ประเภทของป้าย :</span>
+                                <span class="category-output">BILLBOARD</span>
+                            </div>
+                            <div class="category-list slimScrollbar">
+                                <div class="category-list-filter">address</div>
+                                <div class="category-list-output">23 NGAMWONGWARN 1 ALLEY, BANG KRASO PAKKRET, NONTHABURI 11100</div>
+                                <div class="mgb-30"></div>
+                                <div class="category-list-filter">size</div>
+                                <div class="category-list-output">1000 X 600 cm</div>
+                                <div class="mgb-30"></div>
+                                <div class="category-list-filter">area</div>
+                                <div class="category-list-output">100</div>
+                                <div class="mgb-30"></div>
+                                <div class="category-list-filter">last<span class="mgl-5">update</span></div>
+                                <div class="category-list-output">12.10.2016</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twelve wide column pdt-0 pdl-0">
+                    <div class="modal-layout">
+                        <div class="tab-in-modal-form">
+                            <!--tab menu-->
+                            <div class="ui six item   tabular menu">
+                                <a class="active item" data-tab="tab-one">SIDE A</a>
+                                <a class="item" data-tab="tab-two">SIDE B</a>
+                                <a class="item" data-tab="tab-three">SIDE C</a>
+                                <a class="item" data-tab="tab-four">SIDE D</a>
+                                <a class="item" data-tab="tab-five">CALENDAR</a>
+                                <a class="item" data-tab="tab-six">FOR OWNER</a>
+                            </div>
+                            <!--tab one-->
+                            <div class="ui tab active" data-tab="tab-one">
+                                <div class="sidetab-content">
+                                    <div class="ui grid ">
+                                        <div class="eleven wide column pdlr-0">
+                                            <div class="cover">
+                                                <img src="../image/cover.png" class="img-cover">
+                                                <div class="text-cover">
+                                                    <h1>the data</h1>
+                                                    <h1 class="-cover-b">description</h1>
+                                                    <h1 class="-cover-c">of analysis</h1>
+                                                </div>
+                                                <div class="border-cover"></div>
+                                            </div>
+                                            <div class="table-inside-tab-container">
+                                                <table class="ui fixed celled  table inside-tab">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>CATEGORY</th>
+                                                            <th>BRAND</th>
+                                                            <th>PRODUCT</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>สินค้าอุปโภคบริโภค</td>
+                                                            <td>CHANEL</td>
+                                                            <td>น้ำหอม</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="five wide column pdl-0">
+                                            <div class="video-container">
+                                                <video class="video-js -video-container-in-modal vjs-default-skin" poster="../image/poster-video.png" controls preload="auto" data-setup="{}">
+                                            <source src="../videos/clip4web_webapp.mp4" type='video/mp4'>
+                                            <source src="../videos/clip4web_webapp.webm" type="video/webm">
+                                            <source src="../videos/clip4web_webapp.ogv" type="video/ogv" />
+                                            </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-bottom">
+                                        <div class="button-filter-form">
+                                            <button class="btn-with-icon mgr-15">
+                                          <img src="../image/favorite-icon.png" class="icon-btn -favorite-icon">
+                                          <span class="text-icon">save to favorite</span>
+                                        </button>
+                                            <button class="btn-with-icon mgr-15" id="open-cart-alert">
+                                          <img src="../image/cart-icon.png" class="icon-btn -cart-icon">
+                                          <span class="text-icon">add to cart</span>
+                                        </button>
+                                            <button class="btn-with-icon-yellow">
+                                          <img src="../image/report-black-icon.png" class="icon-btn -report-icon">
+                                            <span class="text-icon">report</span>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--tab two-->
+                            <div class="ui tab" data-tab="tab-two">
+                                2
+                            </div>
+                            <!--tab three-->
+                            <div class="ui tab" data-tab="tab-three">
+                                3
+                            </div>
+                            <!--tab four-->
+                            <div class="ui tab" data-tab="tab-four">
+                                4
+                            </div>
+                            <!--tab five-->
+                            <div class="ui tab" data-tab="tab-five">
+                                5
+                            </div>
+                            <!--tab six-->
+                            <div class="ui tab" data-tab="tab-six">
+                                6
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal filter-->
+    <div class="ui  modal" id="filter-modal">
+        <div class="close-modal" id="close-filter-modal"></div>
+        <div class="content -modal-filter">
+            <div class="ui grid">
+                <div class="three column row pdb-0">
+                    <div class="column">
+                        <div class="filter-modal-container">
+                            <!--tree view-->
+                            <ul class="tree-view">
+                                <li class="first">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" name="example">
+                                        <label>tree view</label>
+                                    </div>
+                                    <span><i class="fa fa-angle-down angle-down-icon" aria-hidden="true" id="toggle-second-view-A"></i></span>
+                                </li>
+                                <!--second-->
+                                <ul class="second-view" id="second-view-A">
+                                    <li class="second">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="example">
+                                            <label>second 1</label>
+                                        </div>
+
+                                    </li>
+                                    <li class="second">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="example">
+                                            <label>second 2</label>
+                                        </div>
+                                        <span><i class="fa fa-angle-down angle-down-icon" aria-hidden="true" id="toggle-last-view-A"></i></span>
+                                    </li>
+                                    <!--last-->
+                                    <ul class="last-view" id="last-view-A">
+                                        <li class="last">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example">
+                                                <label>last </label>
+                                            </div>
+                                        </li>
+                                        <li class="last">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example">
+                                                <label>last </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="filter-modal-container">
+                            <!--tree view-->
+                            <ul class="tree-view">
+                                <li class="first">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" name="example">
+                                        <label>tree view</label>
+                                    </div>
+                                    <span><i class="fa fa-angle-down angle-down-icon" aria-hidden="true" id="toggle-second-view-A"></i></span>
+                                </li>
+                                <!--second-->
+                                <ul class="second-view" id="second-view-A">
+                                    <li class="second">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="example">
+                                            <label>second 1</label>
+                                        </div>
+
+                                    </li>
+                                    <li class="second">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="example">
+                                            <label>second 2</label>
+                                        </div>
+                                        <span><i class="fa fa-angle-down angle-down-icon" aria-hidden="true" id="toggle-last-view-A"></i></span>
+                                    </li>
+                                    <!--last-->
+                                    <ul class="last-view" id="last-view-A">
+                                        <li class="last">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example">
+                                                <label>last </label>
+                                            </div>
+                                        </li>
+                                        <li class="last">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example">
+                                                <label>last </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="filter-modal-container">
+                            <!--tree view-->
+                            <ul class="tree-view">
+                                <li class="first">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" name="example">
+                                        <label>tree view</label>
+                                    </div>
+                                    <span><i class="fa fa-angle-down angle-down-icon" aria-hidden="true" id="toggle-second-view-A"></i></span>
+                                </li>
+                                <!--second-->
+                                <ul class="second-view" id="second-view-A">
+                                    <li class="second">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="example">
+                                            <label>second 1</label>
+                                        </div>
+
+                                    </li>
+                                    <li class="second">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="example">
+                                            <label>second 2</label>
+                                        </div>
+                                        <span><i class="fa fa-angle-down angle-down-icon" aria-hidden="true" id="toggle-last-view-A"></i></span>
+                                    </li>
+                                    <!--last-->
+                                    <ul class="last-view" id="last-view-A">
+                                        <li class="last">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example">
+                                                <label>last </label>
+                                            </div>
+                                        </li>
+                                        <li class="last">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example">
+                                                <label>last </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sixteen wide column pdt-0">
+                    <div class="mid-align">
+                        <button type="button" name="button" class="btn-primary">save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--alert popup-->
+    <div class="alert-popup-overlay" id="cart-alert">
+        <div class="alert-popup">
+            <h3 class="title-alert">save to my cart</h3>
+            <div class="logo-cart">
+                <span class="cart-icon"><img src="../image/cart-black-icon.png"></span>cart
+            </div>
+            <ul class="cart-list">
+                <li>ตะกร้าของฉัน 1</li>
+                <li>ตะกร้าของฉัน 2</li>
+                <li>ตะกร้าของฉัน 3</li>
+                <li>ตะกร้าของฉัน 4</li>
+            </ul>
+            <form class="ui form mgtb-15">
+                <div class="field">
+                    <label>เพิ่มชื่อตะกร้าสินค้า</label>
+                    <input type="text" placeholder="ระบุชื่อตะกร้าสินค้า">
+                </div>
+            </form>
+            <div class="btn-group-cart">
+                <button class="btn-primary" id="close-cart-alert">cancel</button>
+                <button class="btn-primary">add new cart</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jQuery.min.js"></script>
+    <script src="../js/tab.min.js"></script>
+    <script src="../js/form.min.js"></script>
+    <script src="../js/modal.min.js"></script>
+    <script src="../js/dimmer.min.js"></script>
+    <script src="../js/transition.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/easyzoom.js"></script>
+    <script src="../js/dropdown.min.js"></script>
+    <script src="../js/checkbox.min.js"></script>
+    <script src="../js/googlemap.js"></script>
+    <script src="../js/treeview.js"></script>
+    <script src="../node_modules/video.js/dist/video.min.js"></script>
+    <script src="../node_modules/video.js/dist/ie8/videojs-ie8.min.js"></script>
+    <script src="../node_modules/moment/min/moment.min.js"></script>
+    <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="../js/chartInModal.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUVP_1pDXyXkejmzjXgTRvST_JjEjD6Os&callback=initialize" async defer></script>
+    <script src="../js/map_style1.js"></script>
+    <script src="../js/map_style2.js"></script>
+    <script src="../js/map_style3.js"></script>
+    <script src="https://cdn.jsdelivr.net/sweetalert2/6.2.0/sweetalert2.min.js"></script>
+    <script>
+        // Wait for window load
+        $(window).on('load', function(e) {
+            // Animate loader off screen
+            $(".loading").fadeOut("slow");
+        });
+    </script>
+    <script>
+        //ลูกศรหมุนเมื่อคลิก || แสดง form
+        $("#clickSpin-A").click(function(event) {
+            /* Act on the event */
+            $('#rotating-A').toggleClass('rotated');
+            $("#toggle-form-A").fadeToggle();
+        });
+        $("#clickSpin-B").click(function(event) {
+            /* Act on the event */
+            $('#rotating-B').toggleClass('rotated');
+            $("#toggle-form-B").fadeToggle();
+        });
+        $("#clickSpin-C").click(function(event) {
+            /* Act on the event */
+            $('#rotating-C').toggleClass('rotated');
+            $("#toggle-form-C").fadeToggle();
+        });
+    </script>
+    <script>
+        // เปิด-ปิด .table-list-container
+        $(".click-show-table-list").click(function(event) {
+            $(".table-list-container").slideDown("fast");
+            $(".tools-container").addClass('translateY');
+
+        });
+        $(".toggle-table-up").click(function(event) {
+            $(".table-list-container").slideDown("fast");
+            $(".tools-container").addClass('translateY');
+        });
+        $(".toggle-table-down").click(function(event) {
+            $(".table-list-container").slideUp("fast");
+            $(".tools-container").removeClass('translateY');
+        });
+    </script>
+    <script>
+        //tab
+        $('.menu .item').tab();
+        //checkbox
+        $('.ui.checkbox').checkbox();
+    </script>
+    <script>
+        //modal detail
+        $('.open-modal').on("click", function() {
+            /* Act on the event */
+            $('#detail-modal')
+                .modal(resizeMap())
+                //.modal(loadChart())
+                .modal('setting', 'closable', false)
+                .modal('show')
+        });
+        $("#close-detail-modal").click(function(event) {
+            /* Act on the event */
+            $('#detail-modal').modal('hide');
+        });
+        //modal filter
+        $('#open-filter-modal').on("click", function() {
+            $('#filter-modal')
+                .modal('setting', 'closable', false)
+                .modal('show')
+        });
+        $("#close-filter-modal").click(function(event) {
+            /* Act on the event */
+            $('#filter-modal').modal('hide');
+        });
+    </script>
+    <script>
+        // Instantiate EasyZoom plugin
+        var $easyzoom = $('.easyzoom').easyZoom();
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".slider").owlCarousel({
+                singleItem: true,
+                navigation: false,
+                pagination: false
+            });
+        });
+    </script>
+    <script>
+        $("#open-cart-alert").on("click", function() {
+            $("#cart-alert").css('visibility', 'visible');
+        })
+        $("#close-cart-alert").on("click", function() {
+            $("#cart-alert").css('visibility', 'hidden');
+        })
+    </script>
+</body>
+
+
+</html>

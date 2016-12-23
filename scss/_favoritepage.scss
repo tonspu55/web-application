@@ -1,0 +1,411 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Thai_med';
+    font-size: 16px;
+    overflow: hidden;
+}
+
+div {
+    display: block;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+#mapInModal {
+    width: 100%;
+    height: 100%;
+}
+
+
+table.favorite-table {
+    font-size: 14px !important;
+
+    thead {
+        display: table;
+        width: calc( 100% - 0em );
+
+        tr {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+
+            th {
+                text-align: center;
+                background-color: rgba(34,34,33,0.2) !important;
+                border: none;
+            }
+        }
+    }
+
+    tbody {
+        height: 70vh;
+        display: block;
+        overflow: auto;
+
+        tr {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+    }
+}
+
+.compare-table-outter {
+    overflow: auto;
+    height: 77vh;
+
+    table.compare-table {
+        table-layout: fixed;
+        font-size: 14px !important;
+
+        tbody {
+            tr {
+                &.-rentformonth {
+                    background-color: #eec329;
+                }
+
+                td,
+                th {
+                    min-width: 200px;
+                    padding: 0.78571429em;
+                    border-collapse: collapse;
+                    border: 1px solid rgba(34,36,38,.1);
+
+                    &.-font-bold {
+                        font-weight: 700;
+                    }
+
+                    &.-align-center {
+                        text-align: center;
+                    }
+
+                    &.-set-bin-icon {
+                        position: relative;
+                    }
+
+                    img {
+                        &.-bin-icon {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                th {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.aslide-container {
+    display: none;
+}
+
+.icon-middle {
+    vertical-align: middle;
+}
+
+.search-icon {
+    color: rgba(0,0,0,.87);
+    cursor: pointer;
+}
+
+.remove-icon {
+    color: rgba(0,0,0,.87);
+    cursor: pointer;
+}
+
+.ui.pagination.menu {
+    font-size: 14px;
+}
+
+.floatRight {
+    float: right;
+}
+
+.ui {
+    &.fluid {
+        &.dropdown {
+            font-family: 'Thai_med' !important;
+        }
+    }
+}
+
+
+.mid-align {
+    text-align: center;
+}
+
+.heart-icon {
+    cursor: pointer;
+    color: #bbb;
+
+    &.-active {
+        color: #eec329;
+    }
+}
+
+.search-icon {
+    color: rgba(0,0,0,.87);
+    cursor: pointer;
+}
+
+.angle-down-icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.close-modal {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    background: url("../image/close-icon.png")no-repeat;
+    @include background-size(contain);
+    cursor: pointer;
+    z-index: 10;
+}
+@media (min-width:768px) {}
+@media (min-width:992px) {
+    .wrapper {
+        visibility: visible;
+
+        .border-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 27px;
+            width: 100%;
+            background-color: #000000;
+            z-index: 100;
+        }
+    }
+
+    nav.toffy-nav {
+        width: 100%;
+        height: 53px;
+        background-color: #eec329;
+        position: relative;
+        z-index: 10;
+
+        .user-profile {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 40px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            @include transform(translate(0 , -50%));
+            cursor: pointer;
+
+            .user-icon {
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+
+            ul.user-detail {
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+                background-color: rgba(255, 255, 255, 1);
+                border-radius: 5px;
+                position: absolute;
+                top: 30px;
+                left: 0;
+                @include transition(all .0.25s ease-out);
+                visibility: hidden;
+                opacity: 0;
+                cursor: default;
+                width: 300px;
+                height: auto;
+                padding: 10px;
+
+                li.user-detail-form {
+                    color: #222221;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+
+            &.user-detail-hover {
+                &:hover {
+                    ul.user-detail {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 43px;
+                    }
+                }
+            }
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include transform(translate(-50% , -50%));
+        }
+
+        ul.toffy-menu {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            @include transform(translate(0 , -68%));
+
+            li {
+                display: inline;
+
+                a.toffy-link {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    margin-right: 40px;
+                    font-weight: bold;
+
+                    .icon-menu {
+                        position: relative;
+                        top: 5px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .aslide-container {
+        position: absolute;
+        top: 53px;
+        left: 0;
+        bottom: 27px;
+        background-color: #ebecee;
+        display: block;
+        padding: 25px;
+        width: 400px;
+
+        .aslide-bar {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-shadow: 4px -3px 7px -5px #333;
+            -moz-box-shadow: 4px -3px 7px -5px #333;
+            -webkit-box-shadow: 4px -3px 7px -5px #333;
+            border-top-right-radius: 30px;
+            background-color: #fff;
+
+            .aslide-form {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                border-top-right-radius: 30px;
+                background-color: #fff;
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding: 15px;
+
+                .title-name {
+                    margin-bottom: 25px;
+
+                    span.favorite-title {
+                        font-size: 16px;
+                        font-family: 'Thai_bold';
+                        text-transform: uppercase;
+                        position: relative;
+                        top: 2px;
+                        margin-left: 2px;
+                    }
+                }
+
+                .button-fixed-bot {
+                    position: fixed;
+                    left: 0;
+                    bottom: 65px;
+                    width: 400px;
+                    text-align: center;
+                }
+
+                .title-list {
+                    position: relative;
+                    width: 100%;
+                    font-size: 14px;
+                    font-family: 'Thai_med';
+                    display: block;
+                    color: #222221;
+                    cursor: pointer;
+                    margin-bottom: 30px;
+
+                    .title-list-icon {
+                        position: absolute;
+                        top: -1px;
+                        right: -3px;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        -moz-transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .border-line {
+                        border-bottom: 1px solid #c7c5c5;
+                        margin-top: 5px;
+                    }
+                }
+
+                .aslide-section-form {
+                    position: relative;
+                    display: block;
+                    box-sizing: border-box;
+                    padding: 10px;
+                    background-color: #ebecee;
+                    display: none;
+                    margin: 20px 0;
+                }
+
+                .rotated {
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -moz-transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+
+    .table-description-container {
+        position: absolute;
+        left: 400px;
+        top: 53px;
+        bottom: 27px;
+        right: 0;
+        margin: auto;
+        padding: 25px 25px 0;
+        @include box-shadow ( 1px 0px 3.5px 1px #333);
+
+        .fixed-bottom {
+            position: absolute;
+            right: 0;
+            bottom: 30px;
+            width: 100%;
+
+            .btn-pull-right {
+                float: right;
+                margin-right: 25px;
+            }
+        }
+    }
+}
+@media (min-width:1200px) {}
