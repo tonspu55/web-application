@@ -1,0 +1,112 @@
+﻿[
+{
+"esports_id": "10",
+"esports_type": "thai 1",
+"esports_typeclass": "thai",
+"esports_time": "12 : 14",
+"esports_date": "2019-01-28",
+"esports_thumbnail": "<img src='images/mock_esports_05.jpg'>",
+"esports_title": "จบลงอย่างยิ่งใหญ่และสมศักดิ์ศรีกับการแข่งขันมหกรรมกีฬาอีสปอร์ต Legion of Champions III",
+"esports_description": "ประเดิมศึกดวลแมตช์แรก! งานนี้ทีม Toyota Diamond Cobra ฝึกซ้อมอย่างหนัก เตรียมโชว์ฟอร์มสุดเจ๋ง หลังคว้านักกีฬาอีสปอร์ตแดนโสม SUN -  คิม ซอน อู และ JJAK - ชิน ชาง ฮุน ดีกรีแชมป์โลก",
+"esports_link": "#0"
+},
+{
+"esports_id": "9",
+"esports_type": "global 1",
+"esports_typeclass": "global",
+"esports_time": "12 : 14",
+"esports_date": "2019-01-28",
+"esports_thumbnail": "<img src='images/mock_esports_04.jpg'>",
+"esports_title": "เอาชนะคู่แข่งอย่าง Virtus Pro ไปได้อย่างสุดมันส์",
+"esports_description": "ขอแสดงความยินดีด้วยครับกับชัยชนะของ Team Secret ที่ได้แชมป์ในการแข่งขัน Dota 2 The Chongqing Major ที่ประเทศจีน โดยเอาชนะทีม Virtus Pro ในรอบ Grand Final ไปอย่างสุดมันส์ 3 ต่อ 1 เกม",
+"esports_link": "#0"
+},
+{
+"esports_id": "8",
+"esports_type": "thai 2",
+"esports_typeclass": "thai",
+"esports_time": "12 : 14",
+"esports_date": "2019-01-28",
+"esports_thumbnail": "<img src='images/mock_esports_02.jpg'>",
+"esports_title": "จบลงอย่างยิ่งใหญ่และสมศักดิ์ศรีกับการแข่งขันมหกรรมกีฬาอีสปอร์ต Legion of Champions III",
+"esports_description": "เลอโนโว บริษัทผู้นำด้านคอมพิวเตอร์และสมาร์ท ดีไวซ์ระดับโลกประกาศจบการแข่งขันมหกรรมกีฬาอีสปอร์ต “Legion of Champions III (LoC III)” โดยได้มีการมอบถ้วยรางวัลให้แก่นักกีฬาทีม Awestar",
+"esports_link": "#0"
+},
+{
+"esports_id": "7",
+"esports_type": "global 2",
+"esports_typeclass": "global",
+"esports_time": "12 : 14",
+"esports_date": "2019-01-28",
+"esports_thumbnail": "<img src='images/mock_esports_04.jpg'>",
+"esports_title": "เตรียมฟาดแข้งกันในวันที่ 24 กุมภาพันธ์ 2562 เงินรางวัลกว่า 1.5 ล้านบาท!",
+"esports_description": "เลอโนโว บริษัทผู้นำด้านคอมพิวเตอร์และสมาร์ท ดีไวซ์ระดับโลกประกาศจบการแข่งขันมหกรรมกีฬาอีสปอร์ต “Legion of Champions III (LoC III)” โดยได้มีการมอบถ้วยรางวัลให้แก่นักกีฬาทีม Awestar",
+"esports_link": "#0"
+},
+{
+"esports_id": "6",
+"esports_type": "global 3",
+"esports_typeclass": "global",
+"esports_time": "12 : 14",
+"esports_date": "2019-01-28",
+"esports_thumbnail": "<img src='images/mock_esports_06.jpg'>",
+"esports_title": "เตรียมฟาดแข้งกันในวันที่ 24 กุมภาพันธ์ 2562 เงินรางวัลกว่า 1.5 ล้านบาท!",
+"esports_description": "หลังจากที่ได้มีการฟาดแข้งออนไลน์กันมาเกือบ 2 เดือน ในการแข่งขันฟุตบอลลีออนไลน์ ภายใต้ชื่อรายการแข่งขัน Thai E League Pro การแข่งขัน ลีกฟุตบอลมืออาชีพแรกในประเทศไทย",
+"esports_link": "#0"
+},
+{
+"esports_id": "5",
+"esports_type": "thai 3",
+"esports_typeclass": "thai",
+"esports_time": "12 : 14",
+"esports_date": "2019-01-28",
+"esports_thumbnail": "<img src='images/mock_esports_05.jpg'>",
+"esports_title": "จบลงอย่างยิ่งใหญ่และสมศักดิ์ศรีกับการแข่งขันมหกรรมกีฬาอีสปอร์ต Legion of Champions III",
+"esports_description": "ประเดิมศึกดวลแมตช์แรก! งานนี้ทีม Toyota Diamond Cobra ฝึกซ้อมอย่างหนัก เตรียมโชว์ฟอร์มสุดเจ๋ง หลังคว้านักกีฬาอีสปอร์ตแดนโสม SUN -  คิม ซอน อู และ JJAK - ชิน ชาง ฮุน ดีกรีแชมป์โลก",
+"esports_link": "#0"
+},
+{
+"esports_id": "4",
+"esports_type": "global 4",
+"esports_typeclass": "global",
+"esports_time": "12 : 14",
+"esports_date": "2019-01-28",
+"esports_thumbnail": "<img src='images/mock_esports_04.jpg'>",
+"esports_title": "เอาชนะคู่แข่งอย่าง Virtus Pro ไปได้อย่างสุดมันส์",
+"esports_description": "ขอแสดงความยินดีด้วยครับกับชัยชนะของ Team Secret ที่ได้แชมป์ในการแข่งขัน Dota 2 The Chongqing Major ที่ประเทศจีน โดยเอาชนะทีม Virtus Pro ในรอบ Grand Final ไปอย่างสุดมันส์ 3 ต่อ 1 เกม",
+"esports_link": "#0"
+},
+{
+"esports_id": "3",
+"esports_type": "thai 4",
+"esports_typeclass": "thai",
+"esports_time": "12 : 14",
+"esports_date": "2019-01-28",
+"esports_thumbnail": "<img src='images/mock_esports_03.jpg'>",
+"esports_title": "เตรียมประเดิมสนามอย่างเป็นทางการ 28 มกราคม 2562 นี้",
+"esports_description": "บริษัท การีนา ออนไลน์ (ประเทศไทย) จำกัด ผู้ให้บริการเกมออนไลน์และแพลตฟอร์มการสื่อสารชั้นนำ ที่ให้ผู้ใช้งานสามารถเข้าถึงเกมออนไลน์ยอดนิยมทั้งบนมือถือและคอมพิวเตอร์  เตรียมเปิดศึก กับรายการแข่งขัน ‘RoV Pro League Season 3 Presented",
+"esports_link": "#0"
+},
+{
+"esports_id": "2",
+"esports_type": "global 5",
+"esports_typeclass": "global",
+"esports_time": "12 : 14",
+"esports_date": "2019-01-28",
+"esports_thumbnail": "<img src='images/mock_esports_02.jpg'>",
+"esports_title": "ฟิตซ้อมกันอย่างหนักหวังเป็นที่หนึ่งในการแข่งขัน!!!",
+"esports_description": "ประเดิมศึกดวลแมตช์แรก! งานนี้ทีม Toyota Diamond Cobra ฝึกซ้อมอย่างหนัก เตรียมโชว์ฟอร์มสุดเจ๋ง หลังคว้านักกีฬาอีสปอร์ตแดนโสม SUN -  คิม ซอน อู และ JJAK - ชิน ชาง ฮุน ดีกรีแชมป์โลก",
+"esports_link": "#0"
+},
+{
+"esports_id": "1",
+"esports_type": "thai 5",
+"esports_typeclass": "thai",
+"esports_time": "12 : 14",
+"esports_date": "2019-01-28",
+"esports_thumbnail": "<img src='images/mock_esports_01.jpg'>",
+"esports_title": "เตรียมรับชมการแข่งขันสุดมันส์กันแบบยาวๆได้ตลอดเดือน",
+"esports_description": "การแข่งขันในลีกอย่างเป็นทางการของประเทศไทย กำลังจะเริ่มต้นขึ้นในซีซั่นที่ 2 พร้อมดุเดือดตลอดทั้งฤดูกาล แต่ละทีมนั้นต้องการที่จะคว้าแชมป์ลีกอย่างแน่นอน ความมันส์กำลังจะเริ่มขึ้นแล้ว",
+"esports_link": "#0"
+}
+]
